@@ -8,7 +8,7 @@ const [todos, setTodos] = useState([])
 const [newTodo, setNewTodo] = useState("") 
 
 useEffect(()=>{
-  axios.get("http://localhost:5001/gettasks").then((res)=>{
+  axios.get("https://todoapp-89ce.onrender.com/gettasks").then((res)=>{
     console.log(res.data)
     setTodos(res.data)
   }).catch((err)=>{
@@ -18,13 +18,13 @@ useEffect(()=>{
 
 const submitHandler = (e) =>{
   e.preventDefault();
-  axios.post("http://localhost:5001/addtask", {todo:newTodo}).then((res)=>{
+  axios.post("https://todoapp-89ce.onrender.com/addtask", {todo:newTodo}).then((res)=>{
     setTodos(res.data)
   })
 }
   
 const onDelete = (id)=>{
-  axios.delete(`http://localhost:5001/deletetask/${id}`).then((res)=>{
+  axios.delete(`https://todoapp-89ce.onrender.com/deletetask/${id}`).then((res)=>{
     setTodos(res.data)
   })
 }
