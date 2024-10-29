@@ -1,0 +1,21 @@
+----Backe end:
+-Node js
+-Express js
+-Mongodb
+
+----Setup:
+--npm init
+--npm install express mongoose cors
+    -mongoose -  making a connection from local to mongodb
+    -cors - to use backend apis in front end without any policy kind of issues
+--npm install -D nodemon concurrently
+    -nodemon - auto restar server if changes
+    -concurrently - to run fE and BE servers simultaneously    
+    -D for devdependencies
+
+----Cluster, Database Access, Network Acess:
+https://cloud.mongodb.com/
+rajzuvr
+IEze5ysIAhjyPgVQ
+
+----Talented Api tester like postman -a chrome extension
